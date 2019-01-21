@@ -2,4 +2,7 @@ __pycache__
 *\~
 *.json
 JSONs/
-mycreds.txt
+JLs/
+*creds*
+.project.description*
+Notes.txt
