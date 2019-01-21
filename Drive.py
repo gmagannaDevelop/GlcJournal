@@ -33,9 +33,9 @@ class Drive(object):
                 self.__gauth.LocalWebserverAuth()
             elif (os.uname().sysname == 'Darwin' and\
                     'iPhone' in os.uname().machine):
-                    import console
-                    console.alert('ERROR: Manual authentication needed.')
-                    self.__gauth.LocalWebserverAuth()
+                import console
+                console.alert('ERROR: Manual authentication needed.')
+                self.__gauth.LocalWebserverAuth()
             else:
                 raise Exception
         elif self.__gauth.access_token_expired:
