@@ -97,15 +97,4 @@ class Drive(object):
         file_list = self.__drive.ListFile(_query).GetList()
         return file_list
 
-
 # END Drive
-
-
-''''
-file1 = drive.CreateFile({'title': 'Automata.txt'})
-# ^ Create GoogleDriveFile instance with title 'Hello.txt'.
-file1.SetContentString('Automataaa')
-# ^ Set content of the file from given string.
-file1.Upload()
-print(drive)
-'''
