@@ -74,14 +74,13 @@ class Drive(object):
         if file_name in titles:
             _index = titles.index(file_name)
             _gdrive_file = file_list[_index]
-            _gdrive_file.SetContentFile(path_to_file)
         else:
             _gdrive_file = self.__drive.CreateFile({'title': file_name})
-            _gdrive_file.SetContentFile(path_to_file)
         try:
+            _gdrive_file.SetContentFile(path_to_file)
             _gdrive_file.Upload()
             return True
-        except Exception:
+        except (BaseException, FileNotFoundError):
             return False
 
     def __query_drive(self, query: str = '') -> list:
