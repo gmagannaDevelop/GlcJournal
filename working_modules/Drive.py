@@ -20,6 +20,8 @@ class Drive(object):
         which should be in the same directory as the script. A file can be
         specified providing the relative or absolute path.
         '''
+        if 'client_secrets.json' not in os.listdir('.'):
+            raise Exception
         self.__gauth = GoogleAuth()
         try:
             self.__gauth.LoadCredentialsFile(credentials_file)
@@ -64,7 +66,7 @@ class Drive(object):
         else:
             return False
 
-    def update(self, file_name: str, path: str = ''):
+    def update(self, file_name: str, path: str = '') -> bool:
         file_list = self.__query_drive()
         titles = [_file['title'] for _file in file_list]
         if path:

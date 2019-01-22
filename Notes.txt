@@ -1,0 +1,12 @@
+
+2019/01/20 :
+JSON and JL files seem to be very good for compression!
+
+2019/01/22 :
+The Drive.py module is working, but my fear is true:
+  The Upload() method defined on PyDrive's API
+  won't "choose the best method for uploading" as advertised.
+  The whole file is uploaded each time.
+CONSIDER MIGRATING TO GOOGLE SHEETS API.
+
+
