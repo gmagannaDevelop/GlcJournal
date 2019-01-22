@@ -19,6 +19,8 @@ class Drive(object):
         ''' Initialize the drive object with a default credentials_file,
         which should be in the same directory as the script. A file can be
         specified providing the relative or absolute path.
+        'client_secrets.json' MUST BE ON THE SAME DIRECTORY, OTHERWISE
+        AN EXCEPTION WILL BE THROWN.
         '''
         if 'client_secrets.json' not in os.listdir('.'):
             raise Exception
@@ -67,6 +69,18 @@ class Drive(object):
             return False
 
     def update(self, file_name: str, path: str = '') -> bool:
+        ''' Update a file stored on Google Drive, using a
+        local file. If the file does not exist on Google Drive,
+        a new Google Drive file is created and its content is
+        set to the specified local file's content.
+        This method UPLOADS the file, with all of its content.
+        Appending one line to a 7GiB file will result in the
+        uploading of 7GiB + sizeof(one line).
+
+        Returns:
+                True    (successful uploading)
+                False   (if any error occurs)
+        '''
         file_list = self.__query_drive()
         titles = [_file['title'] for _file in file_list]
         if path:
