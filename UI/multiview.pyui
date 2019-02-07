@@ -1,0 +1,126 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{20, 415}, {270, 52}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "action" : "view_switch",
+          "flex" : "LR",
+          "segments" : "Menu|Alarm|Event|Data",
+          "frame" : "{{94, 213}, {120, 29}}",
+          "uuid" : "151E52AD-D73B-47E9-8F00-C3B0364C9BB3",
+          "class" : "SegmentedControl",
+          "name" : "seg1"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{21, 330}, {269, 56}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "sync",
+          "frame" : "{{114, 211}, {80, 32}}",
+          "title" : "Sync With Google Drive",
+          "uuid" : "ECF7AE60-58B0-41D8-8C7D-69293F20C93A",
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 9,
+          "font_bold" : true,
+          "name" : "button1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 108}, {145, 44}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label1",
+          "frame" : "{{79, 211}, {150, 32}}",
+          "uuid" : "FEC2807F-E6A1-42CA-B850-4FD6BAC82C0B",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Wifi Connection:",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 182}, {273, 79}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label2",
+          "frame" : "{{79, 211}, {150, 32}}",
+          "uuid" : "A57C578F-3481-43A2-8AA7-B736EA76DB24",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Out of Sync",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{86, 34}, {150, 47}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label3",
+          "frame" : "{{79, 211}, {150, 32}}",
+          "uuid" : "5A3E7651-72E8-4ED1-A3B6-DC77F042961C",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "GlcJournal",
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{170, 108}, {94, 44}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label4",
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "472E5798-92A4-4CCF-ADF1-F8EC8E94A6D3",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {316, 516}}",
+    "class" : "View",
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
