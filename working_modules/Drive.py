@@ -52,6 +52,22 @@ class Drive(object):
     def drive(self):
         return self.__drive
 
+    def get_file_id(self, file_name: str = ''):
+        ''' Get the file id of the desired file, if it exists.
+        Return False upon failure i.e. file not specified, file doesn't
+        exist, etc.
+        '''
+        if not file_name:
+            return False
+        file_list = self.__query_drive()
+        names = [_file['title'] for _file in file_list]
+        ids = [_file['id'] for _file in file_list]
+        if file_name in names:
+            return ids[names.index(file_name)]
+        else:
+            return False
+
+
     def file_exists(self, some_file: str, query: str = '') -> bool:
         ''' Query Drive to verify the existence of a given file.
         The provided string 'some_file' should correpond EXACTLY
