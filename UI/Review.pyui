@@ -1,0 +1,142 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{37, 460}, {109, 56}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "ECF7AE60-58B0-41D8-8C7D-69293F20C93A",
+          "corner_radius" : 9,
+          "frame" : "{{114, 211}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,0.111111,0.111111,1.000000)",
+          "border_width" : 1,
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "title" : "Back",
+          "action" : "close_subview",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{128, 56}, {80, 42}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "EE8BD821-0585-4EEE-BEB1-8548DADCFD0E",
+          "corner_radius" : 9,
+          "frame" : "{{60, 245}, {200, 32}}",
+          "border_color" : "RGBA(0.117647,0.411765,1.000000,1.000000)",
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "textfield1",
+          "font_size" : 17
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{175, 460}, {109, 56}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "ECF7AE60-58B0-41D8-8C7D-69293F20C93A",
+          "corner_radius" : 9,
+          "frame" : "{{114, 211}, {80, 32}}",
+          "tint_color" : "RGBA(0.117647,0.117647,1.000000,1.000000)",
+          "border_width" : 1,
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "title" : "Show",
+          "action" : "display_last",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{216, 56}, {74, 42}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{85, 245}, {150, 32}}",
+          "uuid" : "E629B065-9E11-4DCC-B49A-7D1575A71410",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "entries",
+          "name" : "label1",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{37, 106}, {247, 276}}",
+        "class" : "TextView",
+        "attributes" : {
+          "uuid" : "DF86C671-DA1C-4427-A857-84C12AF472EB",
+          "font_size" : 17,
+          "corner_radius" : 9,
+          "frame" : "{{60, 161}, {200, 200}}",
+          "border_color" : "RGBA(0.117647,0.411765,1.000000,1.000000)",
+          "editable" : true,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextView",
+          "name" : "textview1",
+          "flex" : "WH"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{37, 56}, {83, 42}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{85, 245}, {150, 32}}",
+          "uuid" : "42524BC8-265F-4245-9C5D-15D960DD52DE",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Last ",
+          "name" : "label2",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {319, 522}}",
+    "class" : "View",
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]

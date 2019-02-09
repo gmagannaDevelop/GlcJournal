@@ -10,13 +10,13 @@
         "attributes" : {
           "action" : "view_switch",
           "flex" : "LR",
-          "segments" : "Menu|Alarm|Event|Data",
+          "segments" : "Menu|Alarm|Event|Data|Review",
           "frame" : "{{94, 213}, {120, 29}}",
           "uuid" : "151E52AD-D73B-47E9-8F00-C3B0364C9BB3",
           "class" : "SegmentedControl",
           "name" : "seg1"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -46,13 +46,13 @@
         "frame" : "{{17, 108}, {145, 44}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{79, 211}, {150, 32}}",
           "uuid" : "FEC2807F-E6A1-42CA-B850-4FD6BAC82C0B",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Wifi Connection:",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -64,13 +64,13 @@
         "frame" : "{{17, 182}, {273, 79}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label2",
+          "font_size" : 18,
           "frame" : "{{79, 211}, {150, 32}}",
           "uuid" : "A57C578F-3481-43A2-8AA7-B736EA76DB24",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Out of Sync",
-          "font_size" : 18,
+          "name" : "label2",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -82,16 +82,16 @@
         "frame" : "{{86, 34}, {150, 47}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label3",
+          "font_size" : 18,
           "frame" : "{{79, 211}, {150, 32}}",
           "uuid" : "5A3E7651-72E8-4ED1-A3B6-DC77F042961C",
           "class" : "Label",
           "alignment" : "center",
           "text" : "GlcJournal",
-          "font_size" : 18,
+          "name" : "label3",
           "font_name" : "<System-Bold>"
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -100,13 +100,13 @@
         "frame" : "{{170, 108}, {94, 44}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label4",
+          "font_size" : 18,
           "frame" : "{{83, 242}, {150, 32}}",
           "uuid" : "472E5798-92A4-4CCF-ADF1-F8EC8E94A6D3",
           "class" : "Label",
           "alignment" : "left",
           "text" : "",
-          "font_size" : 18,
+          "name" : "label4",
           "font_name" : "<System>"
         },
         "selected" : false

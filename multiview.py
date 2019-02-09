@@ -5,6 +5,7 @@ import console
 
 import wifi
 import logger as log
+import json as js
 from Drive import Drive
 from pathinit import Dir
 #####################################
@@ -14,9 +15,10 @@ from pathinit import Dir
 def view_switch(sender):
 	vs = sender.superview
 	i = vs['seg1'].selected_index
-	if i != 0:
+	if i > 0:
 		views[i].present(hide_title_bar=True)
-		views[i]['timefield'].text = str(dt.datetime.now().time())[0:5]
+		if i < 4:
+			views[i]['timefield'].text = str(dt.datetime.now().time())[0:5]
 		
 
 def close_subview(sender):
@@ -98,6 +100,42 @@ def save_entry(sender):
 	log_success = log.save(data)
 	save_status_alert(log_success)
 
+def last_n(ls: list, n: int):
+	''' Return the last n elements of 
+	a list, if n is less or equal than
+	the list length. 
+	Otherwise return just the last element. 
+	'''
+	size = len(ls)
+	if n <= size:
+		return ls[size-n:size]
+	else:
+		return ls[-1]
+
+def build_string(ls: list):
+	''' Build a displayable string 
+	from a list of dictionaries.
+	'''
+	my_string = ''
+	for entry in ls:
+		for key in entry.keys():
+			my_string += f'{key}: {entry[key]}\n'
+		my_string += '\n\n'
+	return my_string
+			
+def display_last(sender):
+	vs = sender.superview
+	x  = []
+	try:
+		n = int(vs['textfield1'].text)
+	except:
+		n = 1
+	with open('journal.jl', 'r') as f:
+		lines = f.readlines()
+		for i in last_n(lines, n):
+			x.append(js.loads(i))
+	vs['textview1'].text = build_string(x)
+
 @ui.in_background
 def sync(sender):
 	wireless = wifi.is_connected()
@@ -121,16 +159,14 @@ def main():
 	dir = Dir(_path)
 	if not dir.cd_to_goal():
 		raise Exception
-		
-	#global drive 
-	#drive = Drive()
 	
 	global views
 	views = [ 
 		ui.load_view('multiview'),
 		ui.load_view('Alarms'),
 		ui.load_view('Events'),
-		ui.load_view('Data')
+		ui.load_view('Data'),
+		ui.load_view('Review')
 	]
 	
 	global tables 
@@ -163,7 +199,7 @@ def main():
 	]
 	
 	show_wifi_status()
-	views[0].present('sheet', hide_close_button=True)
+	views[0].present('sheet', hide_close_button=False)
 
 
 if __name__ == '__main__':

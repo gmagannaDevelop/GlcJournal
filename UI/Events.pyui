@@ -70,13 +70,13 @@
         "frame" : "{{27.5, 118}, {91, 46}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{90, 234}, {150, 32}}",
           "uuid" : "05A35764-3C9B-4C99-9029-246E634B837A",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Time",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -116,8 +116,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "IG",
-          "name" : "label1",
-          "font_size" : 18
+          "font_size" : 18,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -150,13 +150,13 @@
         "frame" : "{{28, 234}, {92, 46}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Trend",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -190,13 +190,13 @@
         "frame" : "{{28, 288}, {91, 49}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "BG",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -230,13 +230,13 @@
         "frame" : "{{28, 366}, {91, 58}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Event",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -245,7 +245,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{127, 350}, {164, 87}}",
+        "frame" : "{{127, 350}, {164, 103}}",
         "class" : "TableView",
         "attributes" : {
           "uuid" : "CD87B2DE-007B-4308-9616-11310ACF3734",
@@ -253,7 +253,7 @@
           "corner_radius" : 9,
           "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
           "frame" : "{{63, 157}, {200, 200}}",
-          "data_source_items" : "Postprandial\nPostcorrection\nExercice\nStress\nRest\nAlcohol\nSleep\nWake",
+          "data_source_items" : "Postprandial\nPostcorrection\nPre-Exercice\nExcercice\nPost-Exercice\nStress\nRest\nAlcohol\nSleep\nWake",
           "data_source_number_of_lines" : 0,
           "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
           "border_width" : 1,
@@ -273,9 +273,9 @@
     "attributes" : {
       "name" : "",
       "enabled" : true,
-      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "flex" : ""
     },
     "selected" : false
