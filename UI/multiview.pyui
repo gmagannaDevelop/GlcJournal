@@ -5,24 +5,24 @@
         "nodes" : [
 
         ],
-        "frame" : "{{20, 415}, {270, 52}}",
+        "frame" : "{{17, 414}, {289, 52}}",
         "class" : "SegmentedControl",
         "attributes" : {
           "action" : "view_switch",
           "flex" : "LR",
-          "segments" : "Menu|Alarm|Event|Data|Review",
+          "segments" : "Menu|Alarm|Event|Data|Sensor|Review",
           "frame" : "{{94, 213}, {120, 29}}",
           "uuid" : "151E52AD-D73B-47E9-8F00-C3B0364C9BB3",
           "class" : "SegmentedControl",
           "name" : "seg1"
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
 
         ],
-        "frame" : "{{21, 330}, {269, 56}}",
+        "frame" : "{{17, 334}, {289, 56}}",
         "class" : "Button",
         "attributes" : {
           "border_width" : 1,

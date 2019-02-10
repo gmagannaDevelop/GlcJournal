@@ -17,7 +17,7 @@ def view_switch(sender):
 	i = vs['seg1'].selected_index
 	if i > 0:
 		views[i].present(hide_title_bar=True)
-		if i < 4:
+		if i < 5:
 			views[i]['timefield'].text = str(dt.datetime.now().time())[0:5]
 		else:
 			with open('journal.jl', 'r') as f:
@@ -59,11 +59,13 @@ def as_float(string):
 	
 def get_info(view, date):
 	i = views.index(view)
-	j = view['table'].selected_row[1]
+	if i != 4:
+		j = view['table'].selected_row[1]
 	entryType = {
 		1: 'alarm',
 		2: 'event',
-		3: 'data'
+		3: 'data',
+		4: 'sensor'
 	}
 	carbs = as_int(view['carbsfield'].text) if view['carbsfield'] else None
 	
@@ -73,18 +75,31 @@ def get_info(view, date):
 
 	act_ins = as_float(view['actinsfield'].text) if view['actinsfield'] else None
 	
-	info = {
-		'type': entryType[i],
-		'dateTime': str(date),
-		'IG': as_int(view['igfield'].text),
-		'trend': as_int(view['trendfield'].text),
-		'BG': as_int(view['bgfield'].text),
-		'details': tables[i][j],
-		'carbs': carbs,
-		'insulin': insulin,
-		'activeInsulin': act_ins,
-		'food': food
-	}
+	if i == 4:
+		ref = view['reffield'].text if view['reffield'].text else None
+		lot = view['lotfield'].text if view['lotfield'].text else None
+		info = {
+			'type': entryType[i],
+			'dateTime': str(date),
+			'REF': ref,
+			'LOT': lot,
+			'secondRound': view['recycle'].value,
+			'initSuccess': view['success'].value
+		}
+	else:
+		info = {
+			'type': entryType[i],
+			'dateTime': str(date),
+			'IG': as_int(view['igfield'].text),
+			'trend': as_int(view['trendfield'].text),
+			'BG': as_int(view['bgfield'].text),
+			'details': tables[i][j],
+			'carbs': carbs,
+			'insulin': insulin,
+			'activeInsulin': act_ins,
+			'food': food
+		}
+	
 	return info
 	
 @ui.in_background
@@ -175,6 +190,7 @@ def main():
 		ui.load_view('Alarms'),
 		ui.load_view('Events'),
 		ui.load_view('Data'),
+		ui.load_view('Sensor'),
 		ui.load_view('Review')
 	]
 	

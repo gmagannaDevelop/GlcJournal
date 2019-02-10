@@ -21,7 +21,7 @@
           "name" : "button1",
           "font_size" : 15
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -74,16 +74,16 @@
         "frame" : "{{160, 56}, {124, 42}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{85, 245}, {150, 32}}",
           "uuid" : "E629B065-9E11-4DCC-B49A-7D1575A71410",
           "class" : "Label",
           "alignment" : "left",
           "text" : "entries",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -116,13 +116,13 @@
         "frame" : "{{37, 56}, {48, 42}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label2",
+          "font_size" : 18,
           "frame" : "{{85, 245}, {150, 32}}",
           "uuid" : "42524BC8-265F-4245-9C5D-15D960DD52DE",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Last ",
-          "font_size" : 18,
+          "name" : "label2",
           "font_name" : "<System>"
         },
         "selected" : false
