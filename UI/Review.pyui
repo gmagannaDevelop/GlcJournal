@@ -27,7 +27,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{128, 56}, {80, 42}}",
+        "frame" : "{{93, 56}, {59, 42}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "EE8BD821-0585-4EEE-BEB1-8548DADCFD0E",
@@ -71,19 +71,19 @@
         "nodes" : [
 
         ],
-        "frame" : "{{216, 56}, {74, 42}}",
+        "frame" : "{{160, 56}, {124, 42}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{85, 245}, {150, 32}}",
           "uuid" : "E629B065-9E11-4DCC-B49A-7D1575A71410",
           "class" : "Label",
           "alignment" : "left",
           "text" : "entries",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -113,16 +113,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{37, 56}, {83, 42}}",
+        "frame" : "{{37, 56}, {48, 42}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label2",
           "frame" : "{{85, 245}, {150, 32}}",
           "uuid" : "42524BC8-265F-4245-9C5D-15D960DD52DE",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Last ",
-          "name" : "label2",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false

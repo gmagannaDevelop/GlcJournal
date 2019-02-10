@@ -45,7 +45,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{81, 121}, {82, 46}}",
+        "frame" : "{{81, 121}, {82, 40}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -67,16 +67,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{25, 121}, {48, 46}}",
+        "frame" : "{{25, 121}, {48, 40}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{92, 247}, {150, 32}}",
           "uuid" : "601B53F4-4534-4AF9-9DCC-639DE2F7654D",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Time",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -107,16 +107,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{25, 175}, {48, 46}}",
+        "frame" : "{{25, 169}, {48, 40}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "right",
           "text" : "IG",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -125,7 +125,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{81, 175}, {82, 46}}",
+        "frame" : "{{81, 169}, {82, 40}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -147,7 +147,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{171, 121}, {58, 46}}",
+        "frame" : "{{171, 121}, {58, 40}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -156,8 +156,8 @@
           "class" : "Label",
           "alignment" : "right",
           "text" : "Trend",
-          "font_size" : 18,
-          "name" : "label1"
+          "name" : "label1",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -165,7 +165,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{237, 121}, {52, 46}}",
+        "frame" : "{{237, 121}, {52, 40}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -187,7 +187,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{25, 229}, {48, 49}}",
+        "frame" : "{{25, 217}, {48, 40}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -196,8 +196,8 @@
           "class" : "Label",
           "alignment" : "right",
           "text" : "BG",
-          "font_size" : 18,
-          "name" : "label1"
+          "name" : "label1",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -205,7 +205,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{81, 232}, {82, 46}}",
+        "frame" : "{{81, 217}, {82, 40}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -227,16 +227,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{171, 175}, {58, 49}}",
+        "frame" : "{{171, 169}, {58, 40}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Carbs",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -245,7 +245,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{237, 178}, {52, 46}}",
+        "frame" : "{{236, 169}, {52, 40}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -267,7 +267,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{171, 229}, {58, 49}}",
+        "frame" : "{{171, 217}, {58, 40}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -276,8 +276,8 @@
           "class" : "Label",
           "alignment" : "right",
           "text" : "Insulin",
-          "name" : "label1",
-          "font_size" : 18
+          "font_size" : 18,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -285,7 +285,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{237, 232}, {52, 46}}",
+        "frame" : "{{237, 217}, {52, 40}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -307,7 +307,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{125, 348}, {176, 49}}",
+        "frame" : "{{123, 321}, {176, 47}}",
         "class" : "TableView",
         "attributes" : {
           "uuid" : "CD87B2DE-007B-4308-9616-11310ACF3734",
@@ -327,22 +327,22 @@
           "name" : "table",
           "editing" : false
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
 
         ],
-        "frame" : "{{25, 291}, {48, 49}}",
+        "frame" : "{{25, 265}, {48, 40}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Food",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -351,7 +351,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{81, 291}, {207, 46}}",
+        "frame" : "{{82, 265}, {81, 40}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -373,7 +373,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{25, 375}, {93, 49}}",
+        "frame" : "{{25, 321}, {93, 49}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -382,8 +382,48 @@
           "class" : "Label",
           "alignment" : "right",
           "text" : "Bolus Type",
-          "name" : "label1",
-          "font_size" : 18
+          "font_size" : 18,
+          "name" : "label1"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{171, 265}, {58, 40}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label2",
+          "frame" : "{{92, 247}, {150, 32}}",
+          "uuid" : "232F0EF2-DC2A-49C6-8734-B285147BA405",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "ActIns",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{237, 265}, {51, 40}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
+          "corner_radius" : 9,
+          "frame" : "{{63, 241}, {200, 32}}",
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "actinsfield",
+          "font_size" : 17
         },
         "selected" : false
       }

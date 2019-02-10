@@ -19,6 +19,11 @@ def view_switch(sender):
 		views[i].present(hide_title_bar=True)
 		if i < 4:
 			views[i]['timefield'].text = str(dt.datetime.now().time())[0:5]
+		else:
+			with open('journal.jl', 'r') as f:
+				lines = f.readlines()
+				n = len(lines)
+			views[i]['label1'].text = f'entries of {n}'
 		
 
 def close_subview(sender):
@@ -60,11 +65,13 @@ def get_info(view, date):
 		2: 'event',
 		3: 'data'
 	}
-	carbs = as_int(view['carbsfield'].text) if view['carbsfield'] else None
+	carbs = as_int(view['carbsfield'].text) if view['carbsfield'].text else None
 	
-	insulin = as_float(view['insulinfield'].text) if view['insulinfield'] else None
+	insulin = as_float(view['insulinfield'].text) if view['insulinfield'].text else None
 	
-	food = as_int(view['foodfield'].text) if view['foodfield'] else None
+	food = as_int(view['foodfield'].text) if view['foodfield'].text else None
+
+	act_ins = as_float(view['actinsfield'].text) if view['actinsfield'].text else None
 	
 	info = {
 		'type': entryType[i],
@@ -75,6 +82,7 @@ def get_info(view, date):
 		'details': tables[i][j],
 		'carbs': carbs,
 		'insulin': insulin,
+		'activeInsulin': act_ins,
 		'food': food
 	}
 	return info
@@ -104,13 +112,13 @@ def last_n(ls: list, n: int):
 	''' Return the last n elements of 
 	a list, if n is less or equal than
 	the list length. 
-	Otherwise return just the last element. 
+	Otherwise return the whole list.
 	'''
 	size = len(ls)
 	if n <= size:
 		return ls[size-n:size]
 	else:
-		return ls[-1]
+		return ls
 
 def build_string(ls: list):
 	''' Build a displayable string 
@@ -184,7 +192,9 @@ def main():
 		[ 
 			'Postprandial',
 			'Postcorrection',
-			'Exercice',
+			'Pre-Exercice',
+			'Excercice',
+			'Post-Exercice',
 			'Stress',
 			'Rest',
 			'Alcohol',

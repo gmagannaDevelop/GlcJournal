@@ -45,7 +45,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{127, 118}, {164, 46}}",
+        "frame" : "{{88, 118}, {204, 46}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -67,16 +67,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{27.5, 118}, {91, 46}}",
+        "frame" : "{{28, 118}, {62, 46}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{90, 234}, {150, 32}}",
           "uuid" : "05A35764-3C9B-4C99-9029-246E634B837A",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Time",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -107,7 +107,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{28, 172}, {92, 46}}",
+        "frame" : "{{28, 172}, {62, 46}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -116,8 +116,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "IG",
-          "font_size" : 18,
-          "name" : "label1"
+          "name" : "label1",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -125,7 +125,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{127, 172}, {165, 46}}",
+        "frame" : "{{88, 172}, {70, 46}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -147,16 +147,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{28, 234}, {92, 46}}",
+        "frame" : "{{158, 172}, {64, 46}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Trend",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -165,7 +165,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{127, 234}, {165, 46}}",
+        "frame" : "{{221, 172}, {71, 46}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -187,16 +187,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{28, 288}, {91, 49}}",
+        "frame" : "{{28, 237}, {62, 49}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "BG",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -205,7 +205,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{127, 288}, {164, 46}}",
+        "frame" : "{{88, 237}, {70, 46}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -227,16 +227,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{28, 366}, {91, 58}}",
+        "frame" : "{{29, 309}, {91, 58}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Event",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -245,7 +245,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{127, 350}, {164, 103}}",
+        "frame" : "{{127, 309}, {164, 103}}",
         "class" : "TableView",
         "attributes" : {
           "uuid" : "CD87B2DE-007B-4308-9616-11310ACF3734",
@@ -266,16 +266,56 @@
           "flex" : "WH"
         },
         "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{158, 237}, {64, 46}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label2",
+          "frame" : "{{90, 270}, {150, 32}}",
+          "uuid" : "DD3BB75A-1530-4949-BBD7-601F413E0C30",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "ActIns",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{221, 237}, {71, 46}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "D7CD8D6E-647A-433F-95FE-3227377C9F08",
+          "corner_radius" : 9,
+          "frame" : "{{65, 270}, {200, 32}}",
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "actinsfield",
+          "font_size" : 17
+        },
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {330, 572}}",
     "class" : "View",
     "attributes" : {
-      "name" : "",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "enabled" : true,
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "",
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
-      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "flex" : ""
     },
     "selected" : false
