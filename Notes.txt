@@ -9,4 +9,7 @@ The Drive.py module is working, but my fear is true:
   The whole file is uploaded each time.
 CONSIDER MIGRATING TO GOOGLE SHEETS API.
 
+2019/02/10 :
+I just fixed some bugs on the app. 
+Consider ignoring the first 49 lines of journal.jl
 
