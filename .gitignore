@@ -6,3 +6,6 @@ JLs/
 *creds*
 .project.description*
 tmp/*
+.Rhistory
+.ipynb*
+Exporting
