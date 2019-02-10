@@ -65,13 +65,13 @@ def get_info(view, date):
 		2: 'event',
 		3: 'data'
 	}
-	carbs = as_int(view['carbsfield'].text) if view['carbsfield'].text else None
+	carbs = as_int(view['carbsfield'].text) if view['carbsfield'] else None
 	
-	insulin = as_float(view['insulinfield'].text) if view['insulinfield'].text else None
+	insulin = as_float(view['insulinfield'].text) if view['insulinfield'] else None
 	
-	food = as_int(view['foodfield'].text) if view['foodfield'].text else None
+	food = as_int(view['foodfield'].text) if view['foodfield'] else None
 
-	act_ins = as_float(view['actinsfield'].text) if view['actinsfield'].text else None
+	act_ins = as_float(view['actinsfield'].text) if view['actinsfield'] else None
 	
 	info = {
 		'type': entryType[i],
@@ -149,10 +149,11 @@ def sync(sender):
 	wireless = wifi.is_connected()
 	show_wifi_status()
 	if wireless:
+		views[0]['label2'].text = 'Connecting...'
 		drive = Drive()
-		x = drive.update('journal.jl')
-		sync_status_alert(x)
-		if x:
+		updated = drive.update('journal.jl')
+		sync_status_alert(updated)
+		if updated:
 			views[0]['label2'].text = 'All changes saved to Google Drive'
 		else:
 			views[0]['label2'].text = 'Out of Sync'
