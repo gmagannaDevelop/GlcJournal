@@ -5,7 +5,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{17, 414}, {289, 52}}",
+        "frame" : "{{17, 435}, {289, 52}}",
         "class" : "SegmentedControl",
         "attributes" : {
           "action" : "view_switch",
@@ -22,7 +22,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{17, 334}, {289, 56}}",
+        "frame" : "{{17, 371}, {289, 56}}",
         "class" : "Button",
         "attributes" : {
           "border_width" : 1,
@@ -43,17 +43,17 @@
         "nodes" : [
 
         ],
-        "frame" : "{{17, 108}, {145, 44}}",
+        "frame" : "{{17, 139}, {163, 32}}",
         "class" : "Label",
         "attributes" : {
           "font_size" : 18,
           "frame" : "{{79, 211}, {150, 32}}",
           "uuid" : "FEC2807F-E6A1-42CA-B850-4FD6BAC82C0B",
           "class" : "Label",
-          "alignment" : "left",
+          "alignment" : "right",
           "text" : "Wifi Connection:",
           "name" : "label1",
-          "font_name" : "<System>"
+          "font_name" : "<System-Bold>"
         },
         "selected" : false
       },
@@ -61,17 +61,18 @@
         "nodes" : [
 
         ],
-        "frame" : "{{17, 182}, {273, 79}}",
+        "frame" : "{{17, 72}, {289, 59}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label2",
+          "text_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
           "frame" : "{{79, 211}, {150, 32}}",
           "uuid" : "A57C578F-3481-43A2-8AA7-B736EA76DB24",
           "class" : "Label",
-          "alignment" : "left",
+          "alignment" : "center",
           "text" : "Out of Sync",
-          "name" : "label2",
-          "font_name" : "<System>"
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
         },
         "selected" : false
       },
@@ -79,10 +80,10 @@
         "nodes" : [
 
         ],
-        "frame" : "{{86, 34}, {150, 47}}",
+        "frame" : "{{17, 17}, {289, 47}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "font_size" : 26,
           "frame" : "{{79, 211}, {150, 32}}",
           "uuid" : "5A3E7651-72E8-4ED1-A3B6-DC77F042961C",
           "class" : "Label",
@@ -97,7 +98,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{170, 108}, {94, 44}}",
+        "frame" : "{{188, 139}, {118, 32}}",
         "class" : "Label",
         "attributes" : {
           "font_size" : 18,
@@ -110,9 +111,138 @@
           "font_name" : "<System>"
         },
         "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 179}, {163, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "F626B5AC-4F74-40F4-92D5-67A5AB7902D7",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Current directory: ",
+          "name" : "label5",
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{188, 179}, {118, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "355939D8-4F8C-49D8-B390-0245094F47D7",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "curdir",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 219}, {163, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "3EEFCC17-0D05-439D-AEE9-F8C51D13B00B",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "journal.jl present:",
+          "name" : "label6",
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{188, 219}, {118, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "4C1A5CA7-A4F4-44F8-ABD3-142AECD86550",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "journal",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 259}, {163, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "263A4E31-73BE-4F0E-81F4-9292947AF62D",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Lines in journal.jl:",
+          "name" : "label7",
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{188, 259}, {118, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "0CCEEDBD-6EED-43B2-B49E-D3F0FBA2AC32",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "name" : "lines",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 311}, {289, 52}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "active_insulin",
+          "frame" : "{{127, 254}, {80, 32}}",
+          "title" : "Active Insuline",
+          "uuid" : "667E6B69-1009-43FA-8A41-27FE8083D28F",
+          "class" : "Button",
+          "corner_radius" : 9,
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "font_bold" : true,
+          "name" : "button2",
+          "font_size" : 15
+        },
+        "selected" : true
       }
     ],
-    "frame" : "{{0, 0}, {316, 516}}",
+    "frame" : "{{0, 0}, {334, 540}}",
     "class" : "View",
     "attributes" : {
       "enabled" : true,

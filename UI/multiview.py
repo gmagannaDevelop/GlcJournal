@@ -1,5 +1,6 @@
 # IMPORTS:
 import datetime as dt
+import os
 import ui
 import console
 
@@ -132,6 +133,35 @@ def save_entry(sender):
 	save_status_alert(log_success)
 
 
+@ui.in_background
+def active_insulin(sender):
+	''' Calculate the active 
+	insulin at a desired time given the dose and bolus time.
+	'''
+	hour1 = console.input_alert('Bolus time')
+	
+	dose = float(console.input_alert('Dose'))
+	
+	hour2 = console.input_alert('Desired time')
+	
+	hour1 = dt.datetime.strptime(hour1, '%H:%M').time()
+	
+	hour2 = dt.datetime.strptime(hour2, '%H:%M').time()
+	
+	hour1 = dt.datetime.combine(dt.date.min, hour1) - dt.datetime.min
+	
+	hour2 = dt.datetime.combine(dt.date.min, hour2) - dt.datetime.min
+	
+	delta = hour2 - hour1
+	mins = delta.total_seconds()//60
+	
+	active = (lambda t, d: d + (-d/180)*t if t < 180 else 0)(mins, dose)
+	
+	active = round(active, 2)
+	
+	console.alert(f'Active Insulin: {active}')
+
+
 def last_n(ls: list, n: int):
 	''' Return the last n elements of 
 	a list, if n is less or equal than
@@ -158,25 +188,28 @@ def build_string(ls: list):
 
 
 def format_food(s: str) -> list:
-	s = s.strip()
-	s = s.lower()
-	allowed = [
-		'a', 'e', 'i',
-		'o', 'u', 'n',
-		'c', 'e', 'a',
-		'u', 'oe', 'o',
-		'e', 'a', 'e'
-	]
-	forbidden = [
-		'á', 'é', 'í',
-		'ó', 'ú', 'ñ',
-		'ç', 'è', 'à',
-		'ù', 'œ', 'ô',
-		'ê', 'â', 'ë'
-	]
-	for fo, al in zip(forbidden, allowed):
-		s = s.replace(fo, al)
-	s = s.split(',')
+	if s:
+		s = s.strip()
+		s = s.lower()
+		allowed = [
+			'a', 'e', 'i',
+			'o', 'u', 'n',
+			'c', 'e', 'a',
+			'u', 'oe', 'o',
+			'e', 'a', 'e'
+		]
+		forbidden = [
+			'á', 'é', 'í',
+			'ó', 'ú', 'ñ',
+			'ç', 'è', 'à',
+			'ù', 'œ', 'ô',
+			'ê', 'â', 'ë'
+		]
+		for fo, al in zip(forbidden, allowed):
+			s = s.replace(fo, al)
+		s = s.split(',')
+	else:
+		s = None
 	return s
 
 
@@ -228,6 +261,17 @@ def main():
 		ui.load_view('Sensor'),
 		ui.load_view('Review')
 	]
+	
+	views[0]['curdir'].text = os.path.split(os.path.abspath(os.curdir))[1]
+	
+	views[0]['journal'].text = str(
+		'journal.jl' in os.listdir()
+		)
+	
+	with open('journal.jl', 'r') as f:
+		lines = f.readlines()
+		lines = len(lines)
+	views[0]['lines'].text = str(lines)
 	
 	global tables 
 	tables = [
