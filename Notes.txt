@@ -13,3 +13,8 @@ CONSIDER MIGRATING TO GOOGLE SHEETS API.
 I just fixed some bugs on the app. 
 Consider ignoring the first 49 lines of journal.jl
 
+2019/02/11 :
+Found more bugs and reformated food storage string -> list. 
+Consider ignoring the first 88 lines of journal.jl
+
+
