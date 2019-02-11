@@ -32,6 +32,7 @@ def close_subview(sender):
 	views[0]['seg1'].selected_index = 0
 	vs.close()
 	show_wifi_status()
+	show_journal_lines()
 
 
 def show_wifi_status():
@@ -242,6 +243,12 @@ def sync(sender):
 			views[0]['label2'].text = 'Out of Sync'
 	else:
 		console.alert('WiFi required for sync')
+		
+def show_journal_lines():
+	with open('journal.jl', 'r') as f:
+		lines = f.readlines()
+		lines = len(lines)
+	views[0]['lines'].text = str(lines)
 
 ###################################
 
@@ -268,10 +275,7 @@ def main():
 		'journal.jl' in os.listdir()
 		)
 	
-	with open('journal.jl', 'r') as f:
-		lines = f.readlines()
-		lines = len(lines)
-	views[0]['lines'].text = str(lines)
+	show_journal_lines()
 	
 	global tables 
 	tables = [
