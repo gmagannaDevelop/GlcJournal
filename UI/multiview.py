@@ -32,8 +32,10 @@ def close_subview(sender):
 	vs.close()
 	show_wifi_status()
 
+
 def show_wifi_status():
 	views[0]['label4'].text = str(wifi.is_connected())
+	
 	
 def get_datetime(superview):
 	i = views.index(superview)
@@ -43,6 +45,7 @@ def get_datetime(superview):
 	d = dt.datetime.combine(d, t)
 	return d
 	
+	
 def as_int(string):
 	try:
 		x = int(string)
@@ -50,12 +53,14 @@ def as_int(string):
 		x = None
 	return x
 
+
 def as_float(string):
 	try:
 		x = float(string)
 	except:
 		x = None
 	return x
+	
 	
 def get_info(view, date):
 	i = views.index(view)
@@ -71,7 +76,7 @@ def get_info(view, date):
 	
 	insulin = as_float(view['insulinfield'].text) if view['insulinfield'] else None
 	
-	food = view['foodfield'].text if view['foodfield'] else None
+	food = format_food(view['foodfield'].text) if view['foodfield'] else None
 
 	act_ins = as_float(view['actinsfield'].text) if view['actinsfield'] else None
 	
@@ -102,6 +107,7 @@ def get_info(view, date):
 	
 	return info
 	
+	
 @ui.in_background
 def save_status_alert(success):
 	if success:
@@ -109,19 +115,22 @@ def save_status_alert(success):
 	else:
 		console.alert('ERROR: Entry not saved')
 
+
 @ui.in_background
 def sync_status_alert(success):
 	if success:
 		console.alert('Successful Synchronization')
 	else:
 		console.alert('ERROR: Unsuccessful Synchronization')
-		
+
+
 def save_entry(sender):
 	vs   = sender.superview
 	date = get_datetime(vs)
 	data = get_info(vs, date)
 	log_success = log.save(data)
 	save_status_alert(log_success)
+
 
 def last_n(ls: list, n: int):
 	''' Return the last n elements of 
@@ -135,6 +144,7 @@ def last_n(ls: list, n: int):
 	else:
 		return ls
 
+
 def build_string(ls: list):
 	''' Build a displayable string 
 	from a list of dictionaries.
@@ -145,7 +155,31 @@ def build_string(ls: list):
 			my_string += f'{key}: {entry[key]}\n'
 		my_string += '\n\n'
 	return my_string
-			
+
+
+def format_food(s: str) -> list:
+	s = s.strip()
+	s = s.lower()
+	allowed = [
+		'a', 'e', 'i',
+		'o', 'u', 'n',
+		'c', 'e', 'a',
+		'u', 'oe', 'o',
+		'e', 'a', 'e'
+	]
+	forbidden = [
+		'á', 'é', 'í',
+		'ó', 'ú', 'ñ',
+		'ç', 'è', 'à',
+		'ù', 'œ', 'ô',
+		'ê', 'â', 'ë'
+	]
+	for fo, al in zip(forbidden, allowed):
+		s = s.replace(fo, al)
+	s = s.split(',')
+	return s
+
+
 def display_last(sender):
 	vs = sender.superview
 	x  = []
@@ -158,6 +192,7 @@ def display_last(sender):
 		for i in last_n(lines, n):
 			x.append(js.loads(i))
 	vs['textview1'].text = build_string(x)
+
 
 @ui.in_background
 def sync(sender):
@@ -174,7 +209,7 @@ def sync(sender):
 			views[0]['label2'].text = 'Out of Sync'
 	else:
 		console.alert('WiFi required for sync')
-	
+
 ###################################
 
 
@@ -182,7 +217,7 @@ def main():
 	_path = '/private/var/mobile/Containers/Shared/AppGroup/B4C4E9BD-48D0-410C-A4B9-F05626709C96/Pythonista3/Documents/GlcJournal'
 	dir = Dir(_path)
 	if not dir.cd_to_goal():
-		raise Exception
+		raise Exception('Directory init failed.')
 	
 	global views
 	views = [ 
