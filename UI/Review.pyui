@@ -21,7 +21,7 @@
           "name" : "button1",
           "font_size" : 15
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -35,7 +35,7 @@
           "frame" : "{{60, 245}, {200, 32}}",
           "border_color" : "RGBA(0.117647,0.411765,1.000000,1.000000)",
           "border_width" : 1,
-          "alignment" : "left",
+          "alignment" : "center",
           "autocorrection_type" : "default",
           "font_name" : "<System>",
           "spellchecking_type" : "default",
@@ -71,16 +71,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{160, 56}, {124, 42}}",
+        "frame" : "{{160, 56}, {147, 42}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{85, 245}, {150, 32}}",
           "uuid" : "E629B065-9E11-4DCC-B49A-7D1575A71410",
           "class" : "Label",
           "alignment" : "left",
           "text" : "entries",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -89,7 +89,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{37, 106}, {247, 276}}",
+        "frame" : "{{25, 106}, {282, 276}}",
         "class" : "TextView",
         "attributes" : {
           "uuid" : "DF86C671-DA1C-4427-A857-84C12AF472EB",
@@ -97,7 +97,7 @@
           "corner_radius" : 9,
           "frame" : "{{60, 161}, {200, 200}}",
           "border_color" : "RGBA(0.117647,0.411765,1.000000,1.000000)",
-          "editable" : true,
+          "editable" : false,
           "border_width" : 1,
           "alignment" : "left",
           "autocorrection_type" : "default",
@@ -113,16 +113,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{37, 56}, {48, 42}}",
+        "frame" : "{{25, 56}, {60, 42}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label2",
           "frame" : "{{85, 245}, {150, 32}}",
           "uuid" : "42524BC8-265F-4245-9C5D-15D960DD52DE",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Last ",
-          "name" : "label2",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false

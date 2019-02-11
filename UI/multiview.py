@@ -71,7 +71,7 @@ def get_info(view, date):
 	
 	insulin = as_float(view['insulinfield'].text) if view['insulinfield'] else None
 	
-	food = as_int(view['foodfield'].text) if view['foodfield'] else None
+	food = view['foodfield'].text if view['foodfield'] else None
 
 	act_ins = as_float(view['actinsfield'].text) if view['actinsfield'] else None
 	
@@ -226,7 +226,7 @@ def main():
 	]
 	
 	show_wifi_status()
-	views[0].present('sheet', hide_close_button=False)
+	views[0].present('sheet', hide_close_button=True)
 
 
 if __name__ == '__main__':
