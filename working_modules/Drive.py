@@ -67,6 +67,42 @@ class Drive(object):
         else:
             return False
 
+    def get_file_by_name(self, file_name: str = ''):
+        ''' Get a GoogleDriveFile instance corresponding to the
+        specified file_name, if it exists.
+        Return False upon failure i.e. file doesn't exist, etc.
+        '''
+        if not file_name:
+            raise Exception('file_name parameter missing.')
+        file_list = self.__query_drive()
+        names = [_file['title'] for _file in file_list]
+        if file_name in names:
+            return file_list[names.index(file_name)]
+        else:
+            return False
+
+    def download(self, file_name: str = '', target_name: str = ''):
+        ''' Download file from drive.
+        Query GoogleDrive for file_name.
+        Save file to targe_name, if specified.
+        target_name defaults to file_name (used to query).
+
+        Returns:
+            True, upon success
+            False, upon failure
+        '''
+        if not file_name:
+            raise Exception('file_name parameter missing.')
+        else:
+            _file = self.get_file_by_name(file_name)
+        if not target_name:
+            target_name = file_name
+
+        if _file:
+            _file.GetContentFile(target_name)
+            return True
+        else:
+            return False
 
     def file_exists(self, some_file: str, query: str = '') -> bool:
         ''' Query Drive to verify the existence of a given file.
