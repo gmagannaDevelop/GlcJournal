@@ -150,6 +150,9 @@ class Drive(object):
             return True
         except (BaseException, FileNotFoundError):
             return False
+    @property
+    def files(self):
+        return [ entry['title'] for entry in self.__query_drive() ]
 
     def __query_drive(self, query: str = '') -> list:
         ''' Helper method returning a list of files.
