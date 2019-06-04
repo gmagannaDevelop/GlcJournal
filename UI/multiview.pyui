@@ -46,13 +46,13 @@
         "frame" : "{{17, 139}, {163, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{79, 211}, {150, 32}}",
           "uuid" : "FEC2807F-E6A1-42CA-B850-4FD6BAC82C0B",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Wifi Connection:",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System-Bold>"
         },
         "selected" : false
@@ -83,13 +83,13 @@
         "frame" : "{{17, 17}, {289, 47}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 26,
+          "name" : "label3",
           "frame" : "{{79, 211}, {150, 32}}",
           "uuid" : "5A3E7651-72E8-4ED1-A3B6-DC77F042961C",
           "class" : "Label",
           "alignment" : "center",
           "text" : "GlcJournal",
-          "name" : "label3",
+          "font_size" : 26,
           "font_name" : "<System-Bold>"
         },
         "selected" : false
@@ -101,13 +101,13 @@
         "frame" : "{{188, 139}, {118, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label4",
           "frame" : "{{83, 242}, {150, 32}}",
           "uuid" : "472E5798-92A4-4CCF-ADF1-F8EC8E94A6D3",
           "class" : "Label",
           "alignment" : "left",
           "text" : "",
-          "name" : "label4",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -119,13 +119,13 @@
         "frame" : "{{17, 179}, {163, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label5",
           "frame" : "{{83, 242}, {150, 32}}",
           "uuid" : "F626B5AC-4F74-40F4-92D5-67A5AB7902D7",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Current directory: ",
-          "name" : "label5",
+          "font_size" : 18,
           "font_name" : "<System-Bold>"
         },
         "selected" : false
@@ -137,13 +137,13 @@
         "frame" : "{{188, 179}, {118, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "curdir",
           "frame" : "{{83, 242}, {150, 32}}",
           "uuid" : "355939D8-4F8C-49D8-B390-0245094F47D7",
           "class" : "Label",
           "alignment" : "left",
           "text" : "",
-          "name" : "curdir",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -155,13 +155,13 @@
         "frame" : "{{17, 219}, {163, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label6",
           "frame" : "{{83, 242}, {150, 32}}",
           "uuid" : "3EEFCC17-0D05-439D-AEE9-F8C51D13B00B",
           "class" : "Label",
           "alignment" : "right",
           "text" : "journal.jl present:",
-          "name" : "label6",
+          "font_size" : 18,
           "font_name" : "<System-Bold>"
         },
         "selected" : false
@@ -173,13 +173,13 @@
         "frame" : "{{188, 219}, {118, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "journal",
           "frame" : "{{83, 242}, {150, 32}}",
           "uuid" : "4C1A5CA7-A4F4-44F8-ABD3-142AECD86550",
           "class" : "Label",
           "alignment" : "left",
           "text" : "",
-          "name" : "journal",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -191,13 +191,13 @@
         "frame" : "{{17, 259}, {163, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label7",
           "frame" : "{{83, 242}, {150, 32}}",
           "uuid" : "263A4E31-73BE-4F0E-81F4-9292947AF62D",
           "class" : "Label",
           "alignment" : "right",
           "text" : "Lines in journal.jl:",
-          "name" : "label7",
+          "font_size" : 18,
           "font_name" : "<System-Bold>"
         },
         "selected" : false
@@ -209,16 +209,17 @@
         "frame" : "{{188, 259}, {118, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "lines",
+          "text_color" : "RGBA(1.000000,0.100000,0.100000,1.000000)",
           "frame" : "{{83, 242}, {150, 32}}",
           "uuid" : "0CCEEDBD-6EED-43B2-B49E-D3F0FBA2AC32",
           "class" : "Label",
           "alignment" : "left",
           "text" : "",
-          "name" : "lines",
-          "font_name" : "<System>"
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -239,7 +240,7 @@
           "name" : "button2",
           "font_size" : 15
         },
-        "selected" : true
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {334, 540}}",

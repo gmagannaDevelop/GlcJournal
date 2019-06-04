@@ -61,7 +61,7 @@
           "name" : "timefield",
           "font_size" : 17
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -70,13 +70,13 @@
         "frame" : "{{28, 118}, {62, 46}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{90, 234}, {150, 32}}",
           "uuid" : "05A35764-3C9B-4C99-9029-246E634B837A",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Time",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -116,8 +116,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "IG",
-          "font_size" : 18,
-          "name" : "label1"
+          "name" : "label1",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -150,13 +150,13 @@
         "frame" : "{{158, 172}, {64, 46}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Trend",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -190,13 +190,13 @@
         "frame" : "{{28, 237}, {62, 49}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "BG",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -230,13 +230,13 @@
         "frame" : "{{29, 309}, {91, 58}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Event",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -253,7 +253,7 @@
           "corner_radius" : 9,
           "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
           "frame" : "{{63, 157}, {200, 200}}",
-          "data_source_items" : "Postprandial\nPostcorrection\nPre-Exercice\nExcercice\nPost-Exercice\nStress\nRest\nAlcohol\nSleep\nWake",
+          "data_source_items" : "Postprandial\nPostcorrection\nPre-Exercice\nExcercice\nPost-Exercice\nStress\nRest\nAlcohol\nSleep\nWake\nSickness\nRecovery\n\n",
           "data_source_number_of_lines" : 0,
           "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
           "border_width" : 1,
@@ -265,7 +265,7 @@
           "name" : "table",
           "flex" : "WH"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -274,13 +274,13 @@
         "frame" : "{{158, 237}, {64, 46}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label2",
           "frame" : "{{90, 270}, {150, 32}}",
           "uuid" : "DD3BB75A-1530-4949-BBD7-601F413E0C30",
           "class" : "Label",
           "alignment" : "center",
           "text" : "ActIns",
-          "name" : "label2",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -311,11 +311,11 @@
     "frame" : "{{0, 0}, {330, 572}}",
     "class" : "View",
     "attributes" : {
-      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "",
       "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
       "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
-      "name" : "",
       "flex" : ""
     },
     "selected" : false
