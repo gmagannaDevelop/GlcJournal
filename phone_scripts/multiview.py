@@ -24,7 +24,6 @@ def view_switch(sender):
 			with open('journal.jl', 'r') as f:
 				lines = f.readlines()
 				n = len(lines)
-			views[i]['label1'].text = f'entries of {n}'
 		
 
 def close_subview(sender):
@@ -130,6 +129,8 @@ def save_entry(sender):
 	vs   = sender.superview
 	date = get_datetime(vs)
 	data = get_info(vs, date)
+	#dayif data['dateTime'] 
+	#^ this if for implementing the postprandial alerts.
 	file = _path + '/' + 'journal.jl'
 	log_success = log.save(data, file)
 	save_status_alert(log_success)
@@ -222,21 +223,31 @@ def display_last(sender):
 	vs = sender.superview
 	x  = []
 	try:
-		n = int(vs['textfield1'].text)
+		# implement sorted boolean ! 
+		chronological = vs['switch1'].value
+		#n = int(vs['textfield1'].text)
 	except:
 		n = 1
-	with open('journal.jl', 'r') as f:
+	with open(os.path.join(_path, 'journal.jl'), 'r') as f:
 		lines = f.readlines()
 		for line in lines:
 			x.append(js.loads(line))
-	# Display entries on chronological order:
-	dates = [y['dateTime'] for y in x]
-	s_dates = sorted(dates)
-	idx = []
-	for sdate in s_dates:
-		idx += [j for j, date in enumerate(dates) if date == sdate]
-		
-	x = [x[i] for i in idx]
+			
+	if chronological:
+		# Display entries on chronological order :
+		dates = [
+			y['dateTime'] for y in x
+		]
+		s_dates = sorted(dates)
+		idx = []
+		for sdate in s_dates:
+			idx += [
+				j for j, date in\
+				enumerate(dates)\
+				if date == sdate
+			]	
+		x = [x[i] for i in idx]
+	
 	x.reverse()
 	#x = last_n(x, n) # buggy
 	
@@ -260,13 +271,16 @@ def sync(sender):
 		console.alert('WiFi required for sync')
 		
 def show_journal_lines():
-	if 'journal.jl' not in os.listdir():
-		open('journal.jl', 'a').close()
-	with open('journal.jl', 'r') as f:
+	if 'journal.jl' not in os.listdir(_path):
+		open(os.path.join(_path, 'journal.jl'), 'a').close()
+	with open(os.path.join(_path, 'journal.jl'), 'r') as f:
 		lines = f.readlines()
 		lines = len(lines)
 	views[0]['lines'].text = str(lines)
 			
+
+def reload(sender):
+	main()
 
 ###################################
 
@@ -291,10 +305,8 @@ def main():
 	if not dir.cd_to_goal():
 		raise Exception('Directory init failed.')
 	
-	views[0]['curdir'].text = os.path.split(os.path.abspath(os.curdir))[1]
-	
 	views[0]['journal'].text = str(
-		'journal.jl' in os.listdir()
+		'journal.jl' in os.listdir(_path)
 		)
 	
 	if 'client_secrets.json' not in os.listdir():
@@ -338,7 +350,7 @@ def main():
 	
 	show_wifi_status()
 	views[0].present('sheet', hide_close_button=False)
-	console.alert('VERIFY JOURNAL')
+	#console.alert('VERIFY JOURNAL')
 	
 
 if __name__ == '__main__':
