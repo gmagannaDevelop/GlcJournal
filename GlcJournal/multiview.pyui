@@ -1,0 +1,242 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 435}, {289, 52}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "action" : "view_switch",
+          "flex" : "LR",
+          "segments" : "Menu|Alarm|Event|Data|Sensor|Review",
+          "frame" : "{{94, 213}, {120, 29}}",
+          "uuid" : "151E52AD-D73B-47E9-8F00-C3B0364C9BB3",
+          "class" : "SegmentedControl",
+          "name" : "seg1"
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 371}, {289, 56}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "sync",
+          "frame" : "{{114, 211}, {80, 32}}",
+          "title" : "Sync With Google Drive",
+          "uuid" : "ECF7AE60-58B0-41D8-8C7D-69293F20C93A",
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 9,
+          "font_bold" : true,
+          "name" : "button1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 139}, {163, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label1",
+          "frame" : "{{79, 211}, {150, 32}}",
+          "uuid" : "FEC2807F-E6A1-42CA-B850-4FD6BAC82C0B",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Wifi Connection:",
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 72}, {289, 59}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label2",
+          "text_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "frame" : "{{79, 211}, {150, 32}}",
+          "uuid" : "A57C578F-3481-43A2-8AA7-B736EA76DB24",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Out of Sync",
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 17}, {289, 47}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label3",
+          "frame" : "{{79, 211}, {150, 32}}",
+          "uuid" : "5A3E7651-72E8-4ED1-A3B6-DC77F042961C",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "GlcJournal",
+          "font_size" : 26,
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{188, 139}, {118, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label4",
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "472E5798-92A4-4CCF-ADF1-F8EC8E94A6D3",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 179}, {163, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label6",
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "3EEFCC17-0D05-439D-AEE9-F8C51D13B00B",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "journal.jl present:",
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{188, 179}, {118, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "journal",
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "4C1A5CA7-A4F4-44F8-ABD3-142AECD86550",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 219}, {163, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label7",
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "263A4E31-73BE-4F0E-81F4-9292947AF62D",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Lines in journal.jl:",
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{188, 219}, {118, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "lines",
+          "text_color" : "RGBA(1.000000,0.100000,0.100000,1.000000)",
+          "frame" : "{{83, 242}, {150, 32}}",
+          "uuid" : "0CCEEDBD-6EED-43B2-B49E-D3F0FBA2AC32",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "font_size" : 18,
+          "font_name" : "<System-Bold>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 311}, {289, 52}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "active_insulin",
+          "frame" : "{{127, 254}, {80, 32}}",
+          "title" : "Active Insuline",
+          "uuid" : "667E6B69-1009-43FA-8A41-27FE8083D28F",
+          "class" : "Button",
+          "corner_radius" : 9,
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "font_bold" : true,
+          "name" : "button2",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{17, 254}, {289, 49}}",
+        "class" : "Button",
+        "attributes" : {
+          "border_width" : 1,
+          "action" : "reload",
+          "frame" : "{{127, 254}, {80, 32}}",
+          "title" : "Reload",
+          "uuid" : "B02D4518-9979-44A8-89E6-289471F250EB",
+          "class" : "Button",
+          "corner_radius" : 9,
+          "border_color" : "RGBA(0.100000,0.400000,1.000000,1.000000)",
+          "font_bold" : true,
+          "name" : "button3",
+          "font_size" : 15
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {334, 540}}",
+    "class" : "View",
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]

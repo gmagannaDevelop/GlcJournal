@@ -1,0 +1,117 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{37, 460}, {109, 56}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "ECF7AE60-58B0-41D8-8C7D-69293F20C93A",
+          "corner_radius" : 9,
+          "frame" : "{{114, 211}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,0.111111,0.111111,1.000000)",
+          "border_width" : 1,
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "title" : "Back",
+          "action" : "close_subview",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{175, 460}, {109, 56}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "ECF7AE60-58B0-41D8-8C7D-69293F20C93A",
+          "corner_radius" : 9,
+          "frame" : "{{114, 211}, {80, 32}}",
+          "tint_color" : "RGBA(0.117647,0.117647,1.000000,1.000000)",
+          "border_width" : 1,
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "title" : "Show",
+          "action" : "display_last",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "button1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{25, 106}, {282, 276}}",
+        "class" : "TextView",
+        "attributes" : {
+          "uuid" : "DF86C671-DA1C-4427-A857-84C12AF472EB",
+          "font_size" : 17,
+          "corner_radius" : 9,
+          "frame" : "{{60, 161}, {200, 200}}",
+          "border_color" : "RGBA(0.117647,0.411765,1.000000,1.000000)",
+          "editable" : false,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextView",
+          "name" : "textview1",
+          "flex" : "WH"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{25, 56}, {132, 31}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{85, 245}, {150, 32}}",
+          "uuid" : "42524BC8-265F-4245-9C5D-15D960DD52DE",
+          "class" : "Label",
+          "alignment" : "right",
+          "text" : "Chronological",
+          "name" : "label2",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{175, 56}, {51, 31}}",
+        "class" : "Switch",
+        "attributes" : {
+          "frame" : "{{134, 246}, {51, 31}}",
+          "value" : true,
+          "class" : "Switch",
+          "name" : "switch1",
+          "uuid" : "0F5D1B7A-5B51-4AEB-ABA0-C021B9804134"
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {319, 522}}",
+    "class" : "View",
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
