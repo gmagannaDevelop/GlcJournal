@@ -21,7 +21,8 @@ def view_switch(sender):
 		if i < 5:
 			views[i]['timefield'].text = str(dt.datetime.now().time())[0:5]
 		else:
-			with open('journal.jl', 'r') as f:
+			with open(os.path.join(_path,
+				'journal.jl'), 'r') as f:
 				lines = f.readlines()
 				n = len(lines)
 		
