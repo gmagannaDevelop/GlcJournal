@@ -27,7 +27,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{28, 31}, {275, 79}}",
+        "frame" : "{{14, 31}, {289, 79}}",
         "class" : "DatePicker",
         "attributes" : {
           "border_width" : 1,
@@ -67,7 +67,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{28, 118}, {85, 46}}",
+        "frame" : "{{14, 118}, {99, 46}}",
         "class" : "Label",
         "attributes" : {
           "name" : "label1",
@@ -265,7 +265,7 @@
           "name" : "table",
           "flex" : "WH"
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -311,7 +311,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{105, 237}, {45, 46}}",
+        "frame" : "{{105, 237}, {53, 46}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -382,10 +382,10 @@
           "font_name" : "<System>",
           "spellchecking_type" : "default",
           "class" : "TextField",
-          "name" : "bgfield",
+          "name" : "dtfield",
           "font_size" : 17
         },
-        "selected" : false
+        "selected" : true
       }
     ],
     "frame" : "{{0, 0}, {330, 572}}",

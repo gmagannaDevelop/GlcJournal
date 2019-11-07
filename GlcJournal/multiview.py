@@ -83,6 +83,12 @@ def get_info(view, date):
 
 	act_ins = as_float(view['actinsfield'].text) if view['actinsfield'] else None
 	
+	isig = as_float(
+		view['isigfield'].text
+		) if view['isigfield'] else None
+		
+	dt = view['dtfield'].text if view['dtfield'] else None
+	
 	if i == 4:
 		ref = view['reffield'].text if view['reffield'].text else None
 		lot = view['lotfield'].text if view['lotfield'].text else None
@@ -107,6 +113,8 @@ def get_info(view, date):
 			'insulin': insulin,
 			'activeInsulin': act_ins,
 			'food': food,
+			'isig': isig,
+			'dt': dt,
 			'location': location.get_location()
 		}
 	
