@@ -3,6 +3,7 @@ import datetime as dt
 import os
 import ui
 import console
+import location
 
 import wifi
 import logger as log
@@ -91,7 +92,8 @@ def get_info(view, date):
 			'REF': ref,
 			'LOT': lot,
 			'secondRound': view['recycle'].value,
-			'initSuccess': view['success'].value
+			'initSuccess': view['success'].value,
+			'location': location.get_location()
 		}
 	else:
 		info = {
@@ -104,7 +106,8 @@ def get_info(view, date):
 			'carbs': carbs,
 			'insulin': insulin,
 			'activeInsulin': act_ins,
-			'food': food
+			'food': food,
+			'location': location.get_location()
 		}
 	
 	return info
