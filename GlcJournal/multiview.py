@@ -336,6 +336,7 @@ def main():
 		[ 
 			'Postprandial',
 			'Postcorrection',
+			'Calibration',
 			'Pre-Exercice',
 			'Excercice',
 			'Post-Exercice',
