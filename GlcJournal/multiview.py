@@ -117,6 +117,12 @@ def get_info(view, date):
 			'dt': dt,
 			'location': location.get_location()
 		}
+		
+		fo = lambda x: True if x==0 else x
+		
+		info = {
+			key:info[key] for key in info.keys() if fo(info[key])
+		}
 	
 	return info
 
