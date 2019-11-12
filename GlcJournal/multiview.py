@@ -89,6 +89,11 @@ def get_info(view, date):
 		
 	dt = view['dtfield'].text if view['dtfield'] else None
 	
+	status = None
+	if i == 2:
+		k = view['table2'].selected_row[1]
+		status = tables[4][k]
+	
 	if i == 4:
 		ref = view['reffield'].text if view['reffield'].text else None
 		lot = view['lotfield'].text if view['lotfield'].text else None
@@ -109,6 +114,7 @@ def get_info(view, date):
 			'trend': as_int(view['trendfield'].text),
 			'BG': as_int(view['bgfield'].text),
 			'details': tables[i][j],
+			'status': status,
 			'carbs': carbs,
 			'insulin': insulin,
 			'activeInsulin': act_ins,
@@ -350,6 +356,7 @@ def main():
 		[ 
 			'Postprandial',
 			'Postcorrection',
+			'Dry-calibration',
 			'Calibration',
 			'Pre-Exercice',
 			'Excercice',
@@ -364,6 +371,11 @@ def main():
 			'Normal',
 			'Dual',
 			'Square'
+		],
+		[
+			'Green',
+			'Yellow',
+			'Red'
 		]
 	]
 	

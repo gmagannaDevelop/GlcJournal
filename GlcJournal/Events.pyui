@@ -5,6 +5,32 @@
         "nodes" : [
 
         ],
+        "frame" : "{{127, 400}, {165, 75}}",
+        "class" : "TableView",
+        "attributes" : {
+          "uuid" : "CD87B2DE-007B-4308-9616-11310ACF3734",
+          "flex" : "WH",
+          "corner_radius" : 9,
+          "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
+          "frame" : "{{63, 157}, {200, 200}}",
+          "data_source_items" : "Green\nYellow\nRed",
+          "data_source_number_of_lines" : 0,
+          "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
+          "border_width" : 1,
+          "data_source_move_enabled" : true,
+          "data_source_delete_enabled" : false,
+          "data_source_font_size" : 18,
+          "row_height" : 44,
+          "class" : "TableView",
+          "name" : "table2",
+          "editing" : false
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
         "frame" : "{{28, 482.5}, {109, 56}}",
         "class" : "Button",
         "attributes" : {
@@ -70,13 +96,13 @@
         "frame" : "{{14, 118}, {99, 46}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{90, 234}, {150, 32}}",
           "uuid" : "05A35764-3C9B-4C99-9029-246E634B837A",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Time",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -116,8 +142,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "IG",
-          "name" : "label1",
-          "font_size" : 18
+          "font_size" : 18,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -150,13 +176,13 @@
         "frame" : "{{205, 172}, {54, 46}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Trend",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -190,13 +216,13 @@
         "frame" : "{{14, 172}, {45, 46}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "BG",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -230,13 +256,13 @@
         "frame" : "{{22, 302}, {91, 58}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{88, 241}, {150, 32}}",
           "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Event",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -245,7 +271,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{128, 302}, {164, 138}}",
+        "frame" : "{{128, 302}, {164, 82}}",
         "class" : "TableView",
         "attributes" : {
           "uuid" : "CD87B2DE-007B-4308-9616-11310ACF3734",
@@ -253,7 +279,7 @@
           "corner_radius" : 9,
           "background_color" : "RGBA(1.0, 1.0, 1.0, 1.0)",
           "frame" : "{{63, 157}, {200, 200}}",
-          "data_source_items" : "Postprandial\nPostcorrection\nCalibration\nPre-Exercice\nExcercice\nPost-Exercice\nStress\nRest\nAlcohol\nSleep\nWake\nSickness\nRecovery\n\n",
+          "data_source_items" : "Postprandial\nPostcorrection\nDry-calibration\nCalibration\nPre-Exercice\nExcercice\nPost-Exercice\nStress\nRest\nAlcohol\nSleep\nWake\nSickness\nRecovery\n\n",
           "data_source_number_of_lines" : 0,
           "border_color" : "RGBA(0.111111,0.407407,1.000000,1.000000)",
           "border_width" : 1,
@@ -271,16 +297,16 @@
         "nodes" : [
 
         ],
-        "frame" : "{{14, 237}, {38, 46}}",
+        "frame" : "{{14, 237}, {30, 46}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label2",
+          "font_size" : 18,
           "frame" : "{{90, 270}, {150, 32}}",
           "uuid" : "DD3BB75A-1530-4949-BBD7-601F413E0C30",
           "class" : "Label",
           "alignment" : "center",
           "text" : "αΙ",
-          "font_size" : 18,
+          "name" : "label2",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -289,7 +315,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{52, 237}, {53, 44}}",
+        "frame" : "{{44, 237}, {61, 44}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "D7CD8D6E-647A-433F-95FE-3227377C9F08",
@@ -311,7 +337,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{105, 237}, {53, 46}}",
+        "frame" : "{{104, 237}, {45, 46}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -320,8 +346,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "ISIG",
-          "font_size" : 18,
-          "name" : "label1"
+          "name" : "label1",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -329,7 +355,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{205, 237}, {35, 46}}",
+        "frame" : "{{212, 237}, {28, 46}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -338,8 +364,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "Δt",
-          "font_size" : 18,
-          "name" : "label1"
+          "name" : "label1",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -347,7 +373,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{157, 237}, {47, 46}}",
+        "frame" : "{{145, 237}, {70, 46}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -369,7 +395,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{240, 237}, {63, 46}}",
+        "frame" : "{{241, 237}, {62, 46}}",
         "class" : "TextField",
         "attributes" : {
           "uuid" : "A1C5B89D-F958-4B00-A0DD-4898E6251764",
@@ -385,17 +411,35 @@
           "name" : "dtfield",
           "font_size" : 17
         },
-        "selected" : true
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{22, 400}, {91, 48}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{88, 241}, {150, 32}}",
+          "uuid" : "43B8BBC3-B601-4DE1-94E3-0113D013499B",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Status",
+          "font_size" : 18,
+          "name" : "label1"
+        },
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {330, 572}}",
     "class" : "View",
     "attributes" : {
-      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "name" : "",
       "enabled" : true,
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
-      "name" : "",
       "flex" : ""
     },
     "selected" : false
